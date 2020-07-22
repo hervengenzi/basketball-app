@@ -1,15 +1,15 @@
 class Player{
     id: number
     name: string
-    team: string
     salary: string
-    careerPoints: number
+    careerPoints: string
 
-    constructor(id: number, name: string, team: string, salary: string, careerPoints: number){
+    constructor(id: number, name: string, salary: string, careerPoints: string){
         this.id = id,
         this.name = name,
-        this.team = team,
         this.salary = salary,
         this.careerPoints = careerPoints
     }
 }
+
+export default Player;
