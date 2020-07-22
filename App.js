@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Home from './src/components/Home';
-import {StyleSheet, View} from 'react-native';
+import Team from './src/components/TeamPlayer';
+import {StyleSheet} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
@@ -11,7 +12,7 @@ class App extends Component{
       <NavigationContainer>
       <Tab.Navigator style={styles.tab}>
         <Tab.Screen name="Teams" component={Home} />
-        <Tab.Screen name="Players" component={Home} />
+        <Tab.Screen name="Players" component={Team} />
       </Tab.Navigator>
     </NavigationContainer>
     );
